@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/html_head'); %>
+  </head>
+  <body>
+    <header><%- include('../partials/header'); %></header>
+
+    <section class="container">
+      <div class="popartStyle">
+        <h1 class="title">Here is your funny blog</h1>
+      </div>
+      <div>
+        <% if(data.length > 0) { %> <% for(var i = 0; i < data.length; i++) { %>
+        <div>
+          <h3>Post <%= i + 1%></h3>
+          <span><%= new Date(data[i].createdAt).toLocaleDateString() %></span>
+        </div>
+        <p><%= data[i].post %></p>
+        <% } %> <% } else { %>
+        <div class="popartStyle flex-centered">
+          <h3 class="centered-text">You don't have posts yet :)</h3>
+        </div>
+        <% } %>
+      </div>
+    </section>
+  </body>
+</html>

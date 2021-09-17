@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h3 {
+  user-select: none;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-sizing: border-box;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+@media (min-width: 480px) {
+  .title {
+    font-size: 5rem;
+    margin-bottom: 0.25em;
+  }
+}
+
+@media (min-width: 740px) {
+  .title {
+    text-align: center;
+  }
+}
+
+.popartStyle {
+  font-family: "Bowlby One SC", sans-serif;
+  text-transform: lowercase;
+  color: #ff2882;
+  text-shadow: 2px 2px 0 #ffd79c, 4px 4px 0 rgb(255 136 10 / 61%),
+    6px 6px 0 rgb(249 167 127 / 53%), 8px 8px 0 #ffd0ce;
+  line-height: 0.9;
+  transform: skewY(-4deg);
+  margin-bottom: 150px;
+  margin-top: 150px;
+}
+
+@media (min-width: 480px) {
+  .popartText {
+    font-size: 3rem;
+  }
+}
+
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
